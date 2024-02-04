@@ -4,7 +4,7 @@ const User = require("../models/userModel");
 require("dotenv").config();
 
 const register = async (req, res) => {
-  // console.log("hello, new user")
+  console.log("hello, new user")
   try {
     const { userName, email } = req.body;
     console.log(req.body);
