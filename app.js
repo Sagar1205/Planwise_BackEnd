@@ -8,11 +8,7 @@ const Task = require("./src/models/taskModel");
 const app = express();
 const port = 3001;
 
-app.use(
-  cors({
-    origin: "https://planwise-sooty.vercel.app",
-  })
-);
+app.use(cors());
 app.use(express.json());
 
 const taskRoutes = require("./src/routes/taskRoutes");
